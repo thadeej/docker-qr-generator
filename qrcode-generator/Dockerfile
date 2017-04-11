@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-MAINTAINER Allen Vailliencourt allen@valien.net
+MAINTAINER DJ Wilson :: thadeej@gmail.com
 
 # Update CA certs
 RUN apk --no-cache add  \
