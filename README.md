@@ -6,14 +6,14 @@ Ever want a Docker container that builds QR codes and then goes away? Well then,
 
 ## Initial Features
 
-* Pull a the image down from [Docker Hub](https://hub.docker.com/r/valien/docker-qrcode-generator/)
+* Pull a the image down from [Docker Hub](https://hub.docker.com/r/thadeej/docker-qr-generator/)
 * Run the following command to spin up a container to automagically create a QR code for you:
 
-    `docker run -v /<WHERE YOU WANT TO SAVE YOUR QR FILES/qr:/qr -e QR_TEXT='I LOVE DOCKER!' -e QR_FILE=QRFileName.png --rm valien/docker-qrcode-generator`
+    `docker run -v /<WHERE YOU WANT TO SAVE YOUR QR FILES/qr:/qr -e QR_TEXT='I LOVE DOCKER!' -e QR_FILE=QRFileName.png --rm thadeej/docker-qr-generator`
 * It should process and save the QR code in your mounted volume, exit, and delete the container.
 * Another option is you can make the container interactive: 
     
-    '`docker run -it --entrypoint=/bin/sh -v /<WHERE YOU WANT TO SAVE YOUR QR FILES/qr:/qr -e QR_TEXT='I LOVE DOCKER!' -e QR_FILE=QRFileName.png --rm valien/docker-qrcode-generator`
+    '`docker run -it --entrypoint=/bin/sh -v /<WHERE YOU WANT TO SAVE YOUR QR FILES/qr:/qr -e QR_TEXT='I LOVE DOCKER!' -e QR_FILE=QRFileName.png --rm thadeej/docker-qr-generator`
 
     The manually run the QR program: 
     
